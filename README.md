@@ -93,14 +93,32 @@ Some of the questions investigated:
 # Example Visualizations
 
 ## Absences vs Final Grade
-(Add screenshot here)
+
+![Absences vs Final Grade](images/absences_vs_g3.png)
+
+---
 
 ## Teacher Parent vs Final Grade
-(Add screenshot here)
+
+![Teacher Parent](images/teacher_parent_boxplot.png)
+
+---
 
 ## School Choice Reason vs Final Grade
-(Add screenshot here)
 
+![School Choice](images/school_reason_boxplot.png)
+
+---
+
+## Internet Access vs Final Grade
+
+![Internet Access](images/internet_access.png)
+
+---
+
+## Romantic Relationship Analysis
+
+![Romantic Analysis](images/romantic_analysis.png)
 ---
 
 # Project Structure
@@ -108,12 +126,13 @@ Some of the questions investigated:
 ```text
 student-performance-eda/
 │
+├── images/
 ├── main.py
-├── README.md
 ├── requirements.txt
 ├── student-mat.csv
+├── student-merge.R
 ├── student-por.csv
-└── images/
+└── student.txt
 ```
 
 ---
