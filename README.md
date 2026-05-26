@@ -106,19 +106,19 @@ Some of the questions investigated:
 
 ## School Choice Reason vs Final Grade
 
-![School Choice](images/school_reason_boxplot.png)
+![School Choice](images/reason_for_school.png)
 
 ---
 
 ## Internet Access vs Final Grade
 
-![Internet Access](images/internet_access.png)
+![Internet Access](images/home_internt.png)
 
 ---
 
 ## Romantic Relationship Analysis
 
-![Romantic Analysis](images/romantic_analysis.png)
+![Romantic Analysis](images/romantic_distribution.png)
 ---
 
 # Project Structure
