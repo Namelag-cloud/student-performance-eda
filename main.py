@@ -24,13 +24,14 @@ Author: Izzy
 import pandas as pd
 import matplotlib.pyplot as plt
 
+
 # ============================================================
 # LOAD DATA
 # ============================================================
 
 # Dataset uses semicolon separators instead of commas
 df = pd.read_csv(
-    r"C:\Users\asus\.deepface\weights\student_performance_eda\student-mat.csv",
+    r"C:\Users\asus\.deepface\student-performance-eda\student-mat.csv",
     sep=";"
 )
 
@@ -118,6 +119,7 @@ plt.title("Average Final Grade by Gender")
 plt.xlabel("Gender")
 plt.ylabel("Average G3")
 
+plt.savefig("images/gender_studies.png")
 plt.show()
 
 # ============================================================
@@ -143,6 +145,7 @@ plt.suptitle("")
 plt.xlabel("(Gender, Romantic Relationship)")
 plt.ylabel("Final Grade (G3)")
 
+plt.savefig("images/gender_romantic.png")
 plt.show()
 
 # ============================================================
@@ -169,6 +172,7 @@ plt.title("Romantic Relationship Distribution by Gender")
 plt.xlabel("Gender")
 plt.ylabel("Percentage")
 
+plt.savefig("images/romantic_distribution.png")
 plt.show()
 
 # ============================================================
@@ -193,6 +197,7 @@ plt.suptitle("")
 plt.xlabel("Reason for Choosing School")
 plt.ylabel("Final Grade (G3)")
 
+plt.savefig("images/reason_for_school.png")
 plt.show()
 
 # ============================================================
@@ -217,6 +222,7 @@ plt.suptitle("")
 plt.xlabel("Internet Access at Home")
 plt.ylabel("Final Grade (G3)")
 
+plt.savefig("images/home_internt.png")
 plt.show()
 
 # ============================================================
@@ -236,6 +242,7 @@ plt.title("Absences vs Final Grade")
 plt.xlabel("Number of Absences")
 plt.ylabel("Final Grade (G3)")
 
+plt.savefig("images/absences_vs_g3.png")
 plt.show()
 
 # ============================================================
@@ -255,6 +262,7 @@ plt.title("Study Time vs Final Grade")
 plt.xlabel("Study Time")
 plt.ylabel("Final Grade (G3)")
 
+plt.savefig("images/studytime.png")
 plt.show()
 
 # ============================================================
@@ -274,6 +282,7 @@ plt.title("Previous Failures vs Final Grade")
 plt.xlabel("Number of Previous Failures")
 plt.ylabel("Final Grade (G3)")
 
+plt.savefig("images/failure_corr.png")
 plt.show()
 
 # ============================================================
@@ -294,6 +303,7 @@ plt.suptitle("")
 plt.xlabel("Has Teacher Parent")
 plt.ylabel("Final Grade (G3)")
 
+plt.savefig("images/teacher_parent_boxplot.png")
 plt.show()
 
 # ============================================================
