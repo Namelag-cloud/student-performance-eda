@@ -31,7 +31,7 @@ import matplotlib.pyplot as plt
 
 # Dataset uses semicolon separators instead of commas
 df = pd.read_csv(
-    "student-mat.csv",
+    r"student-performance-eda\student-mat.csv",
     sep=";"
 )
 
