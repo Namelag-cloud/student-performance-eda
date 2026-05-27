@@ -165,4 +165,4 @@ python main.py
 
 # Author
 
-Issac
+Izzy
