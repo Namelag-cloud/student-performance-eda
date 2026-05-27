@@ -23,17 +23,29 @@ Author: Izzy
 
 import pandas as pd
 import matplotlib.pyplot as plt
+from pathlib import Path
 
+
+# ============================================================
+# PATH SETUP
+# ============================================================
+
+BASE_DIR = Path(__file__).parent
+
+# Dataset path
+csv_path = BASE_DIR / "student-mat.csv"
+
+# Create images folder if it doesn't exist
+images_dir = BASE_DIR / "images"
+images_dir.mkdir(exist_ok=True)
 
 # ============================================================
 # LOAD DATA
 # ============================================================
 
 # Dataset uses semicolon separators instead of commas
-df = pd.read_csv(
-    r"student-performance-eda\student-mat.csv",
-    sep=";"
-)
+df = pd.read_csv(csv_path, sep=";")
+
 
 # ============================================================
 # BASIC DATA INSPECTION
@@ -119,7 +131,7 @@ plt.title("Average Final Grade by Gender")
 plt.xlabel("Gender")
 plt.ylabel("Average G3")
 
-plt.savefig("images/gender_studies.png")
+plt.savefig(images_dir / "gender_studies.png")
 plt.show()
 
 # ============================================================
@@ -145,7 +157,7 @@ plt.suptitle("")
 plt.xlabel("(Gender, Romantic Relationship)")
 plt.ylabel("Final Grade (G3)")
 
-plt.savefig("images/gender_romantic.png")
+plt.savefig(images_dir / "gender_romantic.png")
 plt.show()
 
 # ============================================================
@@ -172,7 +184,7 @@ plt.title("Romantic Relationship Distribution by Gender")
 plt.xlabel("Gender")
 plt.ylabel("Percentage")
 
-plt.savefig("images/romantic_distribution.png")
+plt.savefig(images_dir / "romantic_distribution.png")
 plt.show()
 
 # ============================================================
@@ -197,7 +209,7 @@ plt.suptitle("")
 plt.xlabel("Reason for Choosing School")
 plt.ylabel("Final Grade (G3)")
 
-plt.savefig("images/reason_for_school.png")
+plt.savefig(images_dir / "reason_for_school.png")
 plt.show()
 
 # ============================================================
@@ -222,7 +234,7 @@ plt.suptitle("")
 plt.xlabel("Internet Access at Home")
 plt.ylabel("Final Grade (G3)")
 
-plt.savefig("images/home_internt.png")
+plt.savefig(images_dir / "home_internt.png")
 plt.show()
 
 # ============================================================
@@ -242,7 +254,7 @@ plt.title("Absences vs Final Grade")
 plt.xlabel("Number of Absences")
 plt.ylabel("Final Grade (G3)")
 
-plt.savefig("images/absences_vs_g3.png")
+plt.savefig(images_dir / "absences_vs_g3.png")
 plt.show()
 
 # ============================================================
@@ -262,7 +274,7 @@ plt.title("Study Time vs Final Grade")
 plt.xlabel("Study Time")
 plt.ylabel("Final Grade (G3)")
 
-plt.savefig("images/studytime.png")
+plt.savefig(images_dir / "studytime.png")
 plt.show()
 
 # ============================================================
@@ -282,7 +294,7 @@ plt.title("Previous Failures vs Final Grade")
 plt.xlabel("Number of Previous Failures")
 plt.ylabel("Final Grade (G3)")
 
-plt.savefig("images/failure_corr.png")
+plt.savefig(images_dir / "failure_corr.png")
 plt.show()
 
 # ============================================================
@@ -303,7 +315,7 @@ plt.suptitle("")
 plt.xlabel("Has Teacher Parent")
 plt.ylabel("Final Grade (G3)")
 
-plt.savefig("images/teacher_parent_boxplot.png")
+plt.savefig(images_dir / "teacher_parent_boxplot.png")
 plt.show()
 
 # ============================================================
