@@ -34,8 +34,6 @@ Target variable:
 - Python
 - Pandas
 - Matplotlib
-- Git
-- GitHub
 
 ---
 
@@ -136,30 +134,6 @@ student-performance-eda/
 ```
 
 ---
-
-# How to Run
-
-Install requirements:
-
-```bash
-pip install -r requirements.txt
-```
-
-Run:
-
-```bash
-python main.py
-```
-
----
-
-# Future Improvements
-
-- Add regression modeling
-- Create correlation heatmaps
-- Compare math vs Portuguese datasets
-- Add statistical significance testing
-- Build predictive ML models
 
 ---
 
