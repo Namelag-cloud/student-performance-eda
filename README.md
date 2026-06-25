@@ -137,6 +137,4 @@ student-performance-eda/
 
 ---
 
-# Author
 
-Namelag
